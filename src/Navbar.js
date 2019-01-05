@@ -24,8 +24,19 @@ const NavHeader = () => {
             <NavItem eventKey={1} href="#" className="nav-menu-item">
                 Home
             </NavItem>
-            <NavItem eventKey={2} href="#" className="nav-menu-item">
+            {/*}<NavItem eventKey={2} href="#" className="nav-menu-item" id="menu-hover-link">
                 Expertise
+            </NavItem>*/}
+            <NavItem eventKey={2} href="#" className="nav-menu-item">
+              <div className="dropdown">
+                <button>Expertise</button>
+                <i class="fa fa-caret-down"></i>
+              </div>
+                <div class="dropdown-content">
+                 <a href="#/">Link 1</a>
+                 <a href="#/">Link 2</a>
+                 <a href="#/">Link 3</a>
+               </div>
             </NavItem>
             <NavItem eventKey={3} href="#" className="nav-menu-item">
                 Pricing
