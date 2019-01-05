@@ -1,0 +1,52 @@
+
+.footer {
+  margin-top: 10em;
+  height: auto;
+  background-color: $black;
+  color: $white;
+}
+
+.footer-section {
+  //height: auto;
+  padding: 50px;
+
+  a {
+    color: darkgrey;
+
+    &:hover {
+      color: $green;
+    }
+  }
+
+  p {
+    line-height: 2;
+  }
+
+  h3 {
+    text-transform: uppercase;
+    color: darkgrey;
+  }
+
+  ul {
+    list-style-type: none;
+    padding-left: .2em;
+
+    li {
+      line-height: 1.8;
+    }
+  }
+
+
+}
+
+.fa-2x {
+  margin-right: .4em;
+
+  &:hover {
+    color: $green;
+  }
+}
+
+#email-link {
+  color: $green;
+}

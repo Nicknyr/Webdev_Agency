@@ -1,0 +1,47 @@
+
+.feature-item {
+    border-right : 1px solid lightgrey;
+    height: auto;
+    padding: 4em;
+
+    p {
+      line-height: 2;
+    }
+
+    h2 {
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    h3 {
+      font-style: italic;
+      font-weight: lighter;
+    }
+}
+
+
+.center-pic {
+  text-align: center;
+  margin: auto;
+  padding: 1.5em;
+}
+
+.fa-7x {
+  margin-right: .4em;
+
+  &:hover {
+    color: $green;
+  }
+}
+
+#icon1 {
+  color: #fad859;
+}
+
+#icon2 {
+  color: #ec644b;
+}
+
+#icon3 {
+  color: #336e7b;
+}

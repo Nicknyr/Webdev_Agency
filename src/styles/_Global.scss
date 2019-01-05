@@ -1,0 +1,56 @@
+$black: #2e3131;
+//$green: #7bed9f;
+$green: #1fe0b6;
+$white: #ffffff;
+$grey: #dfe4ea;
+
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono');
+//font-family: 'Roboto Mono', monospace;
+//font-family: 'Roboto', sans-serif;
+
+
+body {
+    background-color: $white;
+    height: 150VH;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3,h4 {
+  font-family: 'Roboto Mono', monospace;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+h3 {
+  font-size: 1.6em;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.8;
+}
+
+.my-button {
+  background-color: $green;
+  text-transform: uppercase;
+  color: $white;
+  border-radius: 5px;
+  font-weight: 700;
+  border: 1px solid transparent;
+  line-height: 1.4;
+  padding: 12px 24px;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+}
+
+#landing-button {
+  font-size: 1.3em;
+  padding: 16px 28px;
+  margin-top: 1em;
+}
