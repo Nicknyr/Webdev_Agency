@@ -6,6 +6,8 @@ import Nav from 'react-bootstrap/lib/Nav';
 //import MenuItem from 'react-bootstrap/lib/MenuItem';
 import Button from 'react-bootstrap/lib/Button';
 import { bootstrapUtils } from 'react-bootstrap/lib/utils';
+import Image from 'react-bootstrap/lib/Image';
+import Logo from './images/logo-white.png';
 
 bootstrapUtils.addStyle(Button, 'custom');
 
@@ -15,7 +17,7 @@ const NavHeader = () => {
         <Navbar inverse collapseOnSelect fixedTop >
         <Navbar.Header>
             <Navbar.Brand>
-            <a href="#brand">React-Bootstrap</a>
+              <Image src={Logo} width={200} />
             </Navbar.Brand>
             <Navbar.Toggle />
         </Navbar.Header>

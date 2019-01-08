@@ -8,10 +8,13 @@
 
 .footer-section {
   //height: auto;
-  padding: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-left: 8.3%;
 
   a {
     color: darkgrey;
+    margin-bottom: 5px;
 
     &:hover {
       color: $green;
@@ -35,18 +38,28 @@
       line-height: 1.8;
     }
   }
-
-
 }
 
 .fa-2x {
   margin-right: .4em;
+  color: $green;
+  opacity: 0.8;
 
   &:hover {
-    color: $green;
+    opacity: 1;
   }
 }
 
 #email-link {
   color: $green;
+  opacitu: 08;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.footer-logo {
+  margin-top: 10px;
+  margin-bottom: 20px;
 }

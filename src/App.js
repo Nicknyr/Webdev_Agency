@@ -7,9 +7,11 @@ import NavHeader from './Navbar';
 import Landing from './Landing';
 import Features from './Features';
 import Section1 from './Section1';
+import Section2 from './Section2';
+import Section3 from './Section3';
+import ContactSection from './ContactSection';
 import Footer from './Footer';
 import CustomButton from './CallToActionButton';
-import DropDownMenu from './DropDownMenu';
 
 library.add(fab, faCheckSquare, faCoffee, faDesktop, faCode, faClock)
 
@@ -22,7 +24,9 @@ class App extends Component {
         <Landing />
         <Features />
         <Section1 />
-        <DropDownMenu />
+        <Section2 />
+        <Section3 />
+        <ContactSection />
         <Footer />
       </div>
     );
