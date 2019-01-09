@@ -1,0 +1,30 @@
+
+.contact-form-section {
+  //background-color: red;
+  margin-top: 5em;
+
+  h2 {
+    text-align: center;
+    padding-bottom: 1em;
+  }
+
+}
+
+.contact-form-box {
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+  height: 80vh;
+  background-color: $black;
+  color: $white;
+  padding-top: 2.5em;
+
+
+  label {
+    //background-color: red;
+    text-transform: uppercase;
+  }
+
+  textarea {
+    color: $black;
+  }
+}

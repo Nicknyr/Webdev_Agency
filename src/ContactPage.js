@@ -4,29 +4,16 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faCheckSquare, faCoffee, faDesktop, faCode, faClock } from '@fortawesome/free-solid-svg-icons'
 import NavHeader from './Navbar';
-import Landing from './Landing';
-import Features from './Features';
-import Section1 from './Section1';
-import Section2 from './Section2';
-import Section3 from './Section3';
 import ContactSection from './ContactSection';
 import ContactForm from './ContactForm';
 import Footer from './Footer';
-import CustomButton from './CallToActionButton';
-
-library.add(fab, faCheckSquare, faCoffee, faDesktop, faCode, faClock)
 
 
-class App extends Component {
+class ContactPage extends Component {
   render() {
     return (
       <div className="App">
         <NavHeader />
-        <Landing />
-        <Features />
-        <Section1 />
-        <Section2 />
-        <Section3 />
         <ContactSection />
         <ContactForm />
         <Footer />
@@ -35,4 +22,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default ContactPage;

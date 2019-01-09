@@ -8,6 +8,7 @@ import Button from 'react-bootstrap/lib/Button';
 import { bootstrapUtils } from 'react-bootstrap/lib/utils';
 import Image from 'react-bootstrap/lib/Image';
 import Logo from './images/logo-white.png';
+import { NavLink } from 'react-router-dom';
 
 bootstrapUtils.addStyle(Button, 'custom');
 
@@ -17,14 +18,16 @@ const NavHeader = () => {
         <Navbar inverse collapseOnSelect fixedTop >
         <Navbar.Header>
             <Navbar.Brand>
-              <Image src={Logo} width={200} />
+              <NavLink to="/">
+                <Image src={Logo} width={200} />
+              </NavLink>
             </Navbar.Brand>
             <Navbar.Toggle />
         </Navbar.Header>
         <Navbar.Collapse>
             <Nav pullRight className="nav-menu">
             <NavItem eventKey={1} href="#" className="nav-menu-item">
-                Home
+                <NavLink to="/">Home</NavLink>
             </NavItem>
             {/*}<NavItem eventKey={2} href="#" className="nav-menu-item" id="menu-hover-link">
                 Expertise
@@ -52,8 +55,8 @@ const NavHeader = () => {
             <NavItem eventKey={6} href="#" className="nav-menu-item">
                 Blog
             </NavItem>
-            <NavItem eventKey={7} href="#" className="nav-menu-item">
-                Work with us
+            <NavItem eventKey={7} href="#" className="nav-menu-item contact-nav-button">
+                <NavLink to="/contact">Work with us</NavLink>
             </NavItem>
             </Nav>
         </Navbar.Collapse>
