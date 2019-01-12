@@ -9,6 +9,7 @@ import { bootstrapUtils } from 'react-bootstrap/lib/utils';
 import Image from 'react-bootstrap/lib/Image';
 import Logo from './images/logo-white.png';
 import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 bootstrapUtils.addStyle(Button, 'custom');
 
@@ -27,7 +28,7 @@ const NavHeader = () => {
         <Navbar.Collapse>
             <Nav pullRight className="nav-menu">
             <NavItem eventKey={1} href="#" className="nav-menu-item">
-                <NavLink to="/">Home</NavLink>
+                <Link to="/">Home</Link>
             </NavItem>
             {/*}<NavItem eventKey={2} href="#" className="nav-menu-item" id="menu-hover-link">
                 Expertise
@@ -56,7 +57,7 @@ const NavHeader = () => {
                 Blog
             </NavItem>
             <NavItem eventKey={7} href="#" className="nav-menu-item contact-nav-button">
-                <NavLink to="/contact">Work with us</NavLink>
+                <Link to="/contact">Work with us</Link>
             </NavItem>
             </Nav>
         </Navbar.Collapse>

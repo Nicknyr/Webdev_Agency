@@ -11,8 +11,10 @@ import Section2 from './Section2';
 import Section3 from './Section3';
 import ContactSection from './ContactSection';
 import ContactForm from './ContactForm';
+import Table from './Table';
+import AnimeJS from './Anime.js';
 import Footer from './Footer';
-import CustomButton from './CallToActionButton';
+
 
 library.add(fab, faCheckSquare, faCoffee, faDesktop, faCode, faClock)
 
@@ -29,6 +31,7 @@ class App extends Component {
         <Section3 />
         <ContactSection />
         <ContactForm />
+        <AnimeJS />
         <Footer />
       </div>
     );
