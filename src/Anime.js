@@ -27,31 +27,24 @@ class AnimeJS extends Component {
         easing: "easeOutExpo",
         delay: 1500
       });
+
   }
 
   render() {
+    let splitWords = this.state.heading.split("");
     return (
       <div>
         <h1 className="ml9">
           <span className="text-wrapper">
-            {Object.values(this.state.heading).map((letter) => {
-              if(letter === /\s/g.test(letter)) {
-                return <span className="letters">J</span>
+            {Object.values(splitWords).map((letter) => {
+              if(letter === " ") {
+                return <span className="letters">&nbsp;</span>
               }
               return (
                 <span className="letters">{letter}</span>
               );
             })}
           </span>
-
-          {/*<span class="text-wrapper">
-            <span class="letters">h</span>
-            <span class="letters">e</span>
-            <span class="letters">l</span>
-            <span class="letters">l</span>
-            <span class="letters">o</span>
-          </span>
-          */}
         </h1>
       </div>
     );
