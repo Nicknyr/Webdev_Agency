@@ -6,7 +6,7 @@ class AnimeJS extends Component {
     super(props);
 
     this.state = {
-      heading: 'Coffee mornings'
+      heading: "Hudson Valley Web Design"
     }
   }
 
@@ -25,25 +25,33 @@ class AnimeJS extends Component {
         opacity: 0,
         duration: 1000,
         easing: "easeOutExpo",
-        delay: 1000
+        delay: 1500
       });
   }
-
-  //$('.ml13').each(function(){
-  //$(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
-  //});
 
   render() {
     return (
       <div>
-        <h1 class="ml9">
-          <span class="text-wrapper">
+        <h1 className="ml9">
+          <span className="text-wrapper">
+            {Object.values(this.state.heading).map((letter) => {
+              if(letter === /\s/g.test(letter)) {
+                return <span className="letters">J</span>
+              }
+              return (
+                <span className="letters">{letter}</span>
+              );
+            })}
+          </span>
+
+          {/*<span class="text-wrapper">
             <span class="letters">h</span>
             <span class="letters">e</span>
             <span class="letters">l</span>
             <span class="letters">l</span>
             <span class="letters">o</span>
           </span>
+          */}
         </h1>
       </div>
     );
