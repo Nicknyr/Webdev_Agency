@@ -47,7 +47,7 @@ const NavHeader = () => {
             <NavItem eventKey={3} href="#" className="nav-menu-item">
                 Pricing
             </NavItem>
-            <NavItem eventKey={4} href="#" className="nav-menu-item">
+            <NavItem eventKey={4} href="/Clients" className="nav-menu-item">
                 Portfolio
             </NavItem>
             <NavItem eventKey={5} href="#" className="nav-menu-item">

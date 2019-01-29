@@ -55,3 +55,28 @@ p {
   padding: 16px 28px;
   margin-top: 1em;
 }
+
+
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+
+.svg-icon {
+  width: 20em;
+  height: 20em;
+  position: relative;
+  left: 500px;
+  //display: none;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  //fill: #4691f6;
+  fill: $green;
+}
+
+.svg-icon circle {
+  //stroke: #4691f6;
+  //stroke-width: 1;
+}

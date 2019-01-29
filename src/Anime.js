@@ -31,12 +31,11 @@ class AnimeJS extends Component {
   }
 
   render() {
-    let splitWords = this.state.heading.split("");
     return (
       <div>
         <h1 className="ml9">
           <span className="text-wrapper">
-            {Object.values(splitWords).map((letter) => {
+            {Object.values(this.state.heading).map((letter) => {
               if(letter === " ") {
                 return <span className="letters">&nbsp;</span>
               }

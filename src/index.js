@@ -6,12 +6,14 @@ import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from 'react-router-dom';
 import { Route, Switch } from "react-router-dom";
 import ContactPage from './ContactPage';
+import ClientsPage from './ClientsPage';
 
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
       <Route exact path="/" component={App} />
       <Route exact path="/contact" component={ContactPage} />
+      <Route exact path="/clients" component={ClientsPage} />
     </Switch>
   </BrowserRouter>
     , document.getElementById('root')

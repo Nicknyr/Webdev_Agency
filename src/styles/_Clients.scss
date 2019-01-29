@@ -1,0 +1,51 @@
+
+.clients-section {
+  //margin-top: 10em;
+}
+
+.clients-item {
+  height: auto;
+  padding: 1em;
+  margin-top: 10em;
+  //background-color: red;
+  border: 2px solid #EFEFEF;
+  border-radius: 5px;
+  -webkit-box-shadow: 21px 17px 22px -14px rgba(186,179,186,0.55);
+-moz-box-shadow: 21px 17px 22px -14px rgba(186,179,186,0.55);
+box-shadow: 21px 17px 22px -14px rgba(186,179,186,0.55);
+
+  img {
+    max-width: 100%;
+    padding-bottom: 1.5em;
+  }
+
+  h2 {
+    padding-bottom: 1em;
+    padding-left: 1em;
+  }
+
+  p {
+    margin-top: 5em;
+    padding-left: 1em;
+    padding-bottom: 1em;
+    line-height: 2;
+  }
+}
+
+.show-grid {
+  //background-color: blue;
+}
+
+
+.portfolio-header {
+  height: 50vh;
+  width: 100%;
+  background-color: grey;
+
+  h1 {
+    //text-align: center;
+    color: $white;
+    margin-top: 7em;
+    margin-left: 3em;
+  }
+}

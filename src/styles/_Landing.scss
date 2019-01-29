@@ -6,10 +6,16 @@
     //background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
     background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
     color: $white;
-    height: 80VH;
+    height: auto;
+    overflow: hidden;
 }
 
-.blah {
-//background-color: yellow;
+.landing-greeting, .landing-svg {
   margin-top: 8em;
+  margin-bottom: 3em;
+}
+
+.landing-greeting {
+  position: relative;
+  left: -600px;
 }
